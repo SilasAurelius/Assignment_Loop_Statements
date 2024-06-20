@@ -9,28 +9,9 @@ times = ['morning', 'afternoon', 'evening']
 moods = ['happy', 'sad', 'energetic', 'calm']
 
 
-random.shuffle(moods)
 
 for i in days:
     for x in times:
-        if i == "Sunday":
-            print("Today is Sunday.")
-            print("In the ", x, "you were", moods)
-        elif i == "Monday":
-            print("Today is Monday.")
-            print("In the ", x, "you were", moods)
-        elif i == "Tuesday":
-            print("Today is Tuesday.")
-            print("In the ", x, "you were", moods)
-        elif i == "Wednesday":
-            print("Today is Wednesday.")
-            print("In the ", x, "you were", moods)
-        elif i == "Thursday":
-            print("Today is Thursday.")
-            print("In the ", x, "you were", moods)
-        elif i == "Friday":
-            print("Today is Friday.")
-            print("In the ", x, "you were", moods)
-        else:
-            print("Today is Saturday.")
-            print("In the ", x, "you were", moods)
+        print(f"Today is {i} in the {x}, you feel {random.choice(moods)}")    
+        
+        
